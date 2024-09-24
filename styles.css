@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(218, 218, 255);
+}
+#panel {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 10px; */
+  background-color: white;
+  overflow: hidden;
+}
+#panelTop {
+  display: flex;
+  padding: 0px 30%;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(92, 92, 222);
+  background: linear-gradient(to left, rgb(113, 182, 113), rgb(108, 108, 228));
+}
+#elem {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.box {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(21, 76, 45);
+  font-weight: 700;
+  font-size: 25;
+}
+#panelBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 100px);
+  padding: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  color: black;
+  font-weight: 700;
+  background-color: rgb(149, 149, 224);
+  border-radius: 100%;
+}
+
+.bubble:hover {
+  cursor:crosshair;
+  transform: scale(1.1);
+  transition: all 200ms ease-in-out;
+  background: radial-gradient(
+    circle,
+    rgb(76, 76, 225) 0%,
+    rgb(138, 255, 138) 100%
+  );
+}
+
+#startGameButton {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(144, 144, 207);
+  border-style: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#startGameButton:hover {
+  scale: 1.1;
+  transition: all 200ms ease-in-out;
+}
+
